@@ -1,4 +1,4 @@
-import initLoader from 'assets/loader/loader.js';
+import initLoader from './assets/loader/loader.js';
 
 const init = () => {
   initLoader();
