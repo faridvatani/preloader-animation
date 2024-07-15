@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Preloader Animation</title>
+
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <div class="loader">
+        <div class="loader_container">
+          <div class="loader_item">
+            <h2 id="loader-counter">0</h2>
+          </div>
+          <div class="loader_item">
+            <h2>100</h2>
+          </div>
+        </div>
+      </div>
+      <header class="header">
+        <div class="header_wrapper">
+          <div class="header_nav_side hs-l">
+            <div class="header_nav_side_item">
+              <span>HEMO</span>
+            </div>
+            <div class="header_nav_side_line"></div>
+          </div>
+          <div class="header_nav_side hs-r">
+            <div class="header_nav_side_item">
+              <span>We are</span>
+              <span>Digital Agency</span>
+            </div>
+            <div class="header_nav_side_line"></div>
+          </div>
+        </div>
+        <div class="header_media">
+          <img
+            src="assets/images/image-1.webp"
+            alt="image 1"
+            class="header_media_image"
+          />
+        </div>
+      </header>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script type="module" src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,63 @@
+@import 'loader/loader.css';
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary: #101010;
+  --secondary: #f0f0f0;
+}
+
+@font-face {
+  font-family: 'Primary';
+  src: url('assets/fonts/victor-serif-regular.woff2') format('woff2'),
+    url('assets/fonts/victor-serif-regular-italic.woff2') format('woff2');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+html {
+  font-size: max(100vw / 1920 * 10);
+}
+
+body {
+  font-family: 'Primary';
+  background-color: var(--primary);
+  color: var(--secondary);
+}
+
+h1 {
+  font-size: 24rem;
+}
+
+h2 {
+  font-size: 16rem;
+}
+
+p {
+  font-size: 2rem;
+}
+
+li,
+span {
+  font-size: 2.4rem;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: max(100vw / 768 * 10);
+  }
+
+  h1 {
+    font-size: 12rem;
+  }
+}

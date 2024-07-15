@@ -1,0 +1,246 @@
+/*? Reset css */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Initial Set-up */
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+/* Responsive calculation */
+html {
+  font-size: calc(100vw / 1920 * 10);
+}
+@media screen and (min-width: 1921px) {
+  html {
+    font-size: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  html {
+    font-size: calc(100vw / 768 * 10);
+  }
+}
+
+main,
+.app {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-tap-highlight-color: transparent;
+
+  margin: 0 auto;
+  max-width: 192rem;
+}
+
+/* Style text */
+h1 {
+  font-family: 'Primary';
+
+  font-size: 5.9rem;
+  line-height: 1.2;
+}
+
+h2 {
+  font-family: 'Primary';
+
+  font-size: 4.7rem;
+  line-height: 1.2;
+}
+
+h3 {
+  font-family: 'Primary';
+
+  font-size: 3.2rem;
+  line-height: 1.2;
+}
+
+h4 {
+  font-family: 'Primary';
+
+  font-size: 3rem;
+  line-height: 1.2;
+}
+
+p {
+  font-family: 'Secondary';
+
+  font-size: 2.6rem;
+  line-height: 1.2;
+  font-weight: 400;
+}
+
+a {
+  font-family: 'Secondary';
+  font-size: 3rem;
+  color: #212121;
+}
+
+span {
+  font-family: 'Secondary';
+  font-size: 1.2rem;
+  line-height: 1.5;
+}
+
+li {
+  font-family: 'Secondary';
+  font-size: 1.6rem;
+  line-height: 1.5;
+}
+
+b {
+  font-weight: bold;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+input,
+textarea {
+  width: 100%;
+  height: 8rem;
+  padding: 1rem;
+  background: rgba(249, 250, 250, 0.5);
+  border: 1px solid #21212144;
+  border-radius: 1rem;
+  outline-color: var(--color-blue);
+}
+textarea {
+  min-height: 16rem;
+  height: auto;
+  resize: vertical;
+}
+
+input::placeholder {
+  vertical-align: middle;
+}
+
+.ofh {
+  overflow: hidden;
+}
