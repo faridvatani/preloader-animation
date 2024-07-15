@@ -37,7 +37,7 @@
 
 .header_wrapper {
   width: inherit;
-  height: inherit;
+  height: 100vh;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -46,13 +46,18 @@
 
 .header_nav_side {
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
   width: 16rem;
-  height: inherit;
+  height: 100%;
   padding: 2rem;
 }
 
 .header_nav_side_item {
-  position: absolute;
+  position: relative;
+  width: max-content;
   top: 50%;
   left: 0;
   transform: translateY(-50%) rotate(90deg);
@@ -72,11 +77,11 @@
   z-index: 100;
 }
 
-.header_nav_side_item:nth-child(1) .header_nav_side_line {
+.header_nav_side:nth-child(1) .header_nav_side_line {
   right: 0;
 }
 
-.header_nav_side_item:nth-child(2) .header_nav_side_line {
+.header_nav_side:nth-child(2) .header_nav_side_line {
   left: 0;
 }
 

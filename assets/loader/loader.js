@@ -25,17 +25,21 @@ const initLoader = () => {
 };
 
 const animateLoader = () => {
-  tl.addLabel('init').to(loader.items, { yPercent: 0 });
+  tl.addLabel('init').to(loader.items, { yPercent: 0, duration: 0.5 });
   tl.addLabel('counter')
-    .to(header.media, { width: '100%', opUpdate: onUpdate }, 'counter')
-    .to(header.sideLines, { scaleY: 0.16 }, 'counter');
+    .to(
+      header.media,
+      { width: '100%', onUpdate: onUpdate, duration: 2 },
+      'counter'
+    )
+    .to(header.sideLines, { scaleY: 0.16, duration: 0.5 }, 'counter');
 
-  tl.addLabel('scaling').to(header.media, { scale: 1 }, 'scaling');
+  tl.addLabel('scaling').to(header.media, { scale: 1, duration: 1 }, 'scaling');
 
   if (!isMobile) {
-    tl.to(header.sideLines, { x: 0, scale: 1 }, 'scaling');
+    tl.to(header.sideLines, { x: 0, scale: 1, duration: 1 }, 'scaling');
   } else {
-    tl.to(header.sideLines, { autoAlpha: 0 }, 'scaling');
+    tl.to(header.sideLines, { autoAlpha: 0, duration: 1 }, 'scaling');
   }
 };
 
@@ -48,13 +52,13 @@ function onUpdate() {
   if (progress === 1) {
     setTimeout(() => {
       destroyLoader();
-    }, 1000);
+    }, 100);
   }
 }
 
 function destroyLoader() {
   gsap.to(loader.items, {
-    duration: 0.6,
+    duration: 0.4,
     yPercent: -100,
     ease: 'expo.inOut',
     onComplete: () => loader.element.remove(),

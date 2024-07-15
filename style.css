@@ -1,4 +1,4 @@
-@import 'loader/loader.css';
+@import '/assets/loader/loader.css';
 
 *,
 *:before,
@@ -46,7 +46,6 @@ p {
   font-size: 2rem;
 }
 
-li,
 span {
   font-size: 2.4rem;
   line-height: 1.2;
